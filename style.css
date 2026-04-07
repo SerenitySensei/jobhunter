@@ -1,0 +1,91 @@
+:root {
+    --primary: #2563eb;
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+}
+
+body {
+    font-family: -apple-system, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h2 { font-size: 1.1rem; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.input-group-row { display: flex; gap: 8px; }
+
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.small-btn { width: auto; padding: 0 15px; background: #4b5563; color: white; }
+
+.linkedin-button { background: #0077b5; color: white; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 10px; }
+
+.af-button { background: #111827; color: white; }
+
+.save-btn { background: var(--primary); color: white; margin-top: 10px; }
+
+.tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+
+.tag {
+    background: #f3f4f6;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #d1d5db;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tag.starred { background: #fef3c7; border-color: #f59e0b; font-weight: bold; }
+
+.results-list { margin-top: 15px; }
+
+.job-card { background: #f9fafb; border: 1px solid #e5e7eb; padding: 10px; border-radius: 6px; margin-bottom: 8px; font-size: 0.9rem; }
+
+.log-list { list-style: none; padding: 0; margin-top: 15px; }
+
+.log-list li { padding: 10px; border-bottom: 1px solid #eee; font-size: 0.9rem; }
